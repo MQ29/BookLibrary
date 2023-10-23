@@ -1,0 +1,38 @@
+﻿@model Book
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1>Edit a contact</h1>
+<form asp-controller="Book" asp-action="Update" method="post">
+<div class="mb-3">
+    <label asp-for="Title">Title</label>
+    <input class="form-control" asp-for="Title" />
+    <span class="text-danger" asp-validation-for="Title"></span>
+</div>
+<div class="mb-3">
+    <label asp-for="Author">Author</label>
+    <input class="form-control" asp-for="Author" />
+    <span class="text-danger" asp-validation-for="Author"></span>
+</div>
+<div class="mb-3">
+    <label asp-for="ISBN">ISBN</label>
+    <input class="form-control" asp-for="ISBN" />
+    <span class="text-danger" asp-validation-for="ISBN"></span>
+</div>
+<div class="mb-3">
+    <label asp-for="Publisher">Publisher</label>
+    <input class="form-control" asp-for="Publisher" />
+    <span class="text-danger" asp-validation-for="Publisher"></span>
+</div>
+<div class="mb-3">
+    <label asp-for="PublicationDate">Publication date</label>
+    <input class="form-control" asp-for="PublicationDate" />
+    <span class="text-danger" asp-validation-for="PublicationDate"></span>
+</div>
+<div class="mb-3">
+    <button class="btn btn-primary" type="submit">Save</button>
+    <button class="btn btn-primary" type="reset">Clear</button>
+</div>
+</form>

@@ -8,10 +8,11 @@ namespace BookLibrary.Models
     {
         [HiddenInput]
         public int Id { get; set; }
+        [Required]
         public string Title { get; set; }
+        [Required]
         public string Author { get; set; }
-        [Required(ErrorMessage = "You have to type ISBN number.")]
-        public string ISBN { get; set; }
+        public string? ISBN { get; set; }
         [Range(0, 2023)]
         public int? PublicationDate { get; set; } 
         public string? Publisher { get; set; }
